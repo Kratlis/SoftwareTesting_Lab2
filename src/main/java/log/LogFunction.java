@@ -39,4 +39,16 @@ public class LogFunction extends Function {
     public void setLog10(Log10 log10) {
         this.log10 = log10;
     }
+
+    public Log3 getLog3() {
+        return log3;
+    }
+
+    public Log5 getLog5() {
+        return log5;
+    }
+
+    public Log10 getLog10() {
+        return log10;
+    }
 }

@@ -22,4 +22,8 @@ public class Tan extends Function {
     public void setCos(Cos cosFunction) {
         this.cosFunction = cosFunction;
     }
+
+    public Cos getCos() {
+        return cosFunction;
+    }
 }

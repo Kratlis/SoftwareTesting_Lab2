@@ -65,4 +65,28 @@ public class TrigonometryFunction extends Function {
     public void setSec(Sec sec) {
         this.sec = sec;
     }
+
+    public Cos getCos() {
+        return cos;
+    }
+
+    public Sin getSin() {
+        return sin;
+    }
+
+    public Tan getTan() {
+        return tan;
+    }
+
+    public Cot getCot() {
+        return cot;
+    }
+
+    public Csc getCsc() {
+        return csc;
+    }
+
+    public Sec getSec() {
+        return sec;
+    }
 }
