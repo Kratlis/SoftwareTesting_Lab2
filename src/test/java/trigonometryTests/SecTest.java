@@ -11,9 +11,8 @@ import trigonometry.Sec;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
-// todo: sec, cot, tan
-@TestInstance(value = PER_CLASS)
 
+@TestInstance(value = PER_CLASS)
 public class SecTest {
     private static final double DELTA = 0.05;
     private static final double ACCURACY = 0.0001;
