@@ -27,7 +27,7 @@ public class LnTest {
 
     @AfterAll
     public void logInCSV() {
-        CsvLogger csvLogger = new CsvLogger("csv_output/ln.csv", 1, 5, 0.1);
+        CsvLogger csvLogger = new CsvLogger("ln.csv", 1, 5, 0.1);
         csvLogger.log(ln);
     }
 

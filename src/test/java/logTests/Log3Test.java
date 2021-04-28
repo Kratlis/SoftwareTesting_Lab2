@@ -22,12 +22,12 @@ public class Log3Test {
     @AfterAll
     public void logInCSV() {
         log3 = new Log3(ACCURACY);
-        instruments.CsvLogger csvLogger = new instruments.CsvLogger("csv_output/log2.csv", 1, 5, 0.1);
+        instruments.CsvLogger csvLogger = new instruments.CsvLogger("log3.csv", 1, 5, 0.1);
         csvLogger.log(log3);
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/log2_test_data.csv")
+    @CsvFileSource(resources = "/log3_test_data.csv")
     public void tableValuesStubsTest(float x, float expected) {
         log3 = new Log3(ACCURACY);
         log3.setLn(LogMocks.getLnMock());

@@ -20,7 +20,7 @@ public class LogFunctionTest {
     @AfterAll
     public void logInCSV() {
         logFunction = new LogFunction(ACCURACY);
-        instruments.CsvLogger csvLogger = new instruments.CsvLogger("csv_output/logFunction.csv", 1, 5, 0.1);
+        instruments.CsvLogger csvLogger = new instruments.CsvLogger("logFunction.csv", 1, 5, 0.1);
         csvLogger.log(logFunction);
     }
 
@@ -29,7 +29,7 @@ public class LogFunctionTest {
     public void tableValuesStubsTest(float x, float expected) {
         logFunction = new LogFunction(ACCURACY);
         logFunction.setLn(LogMocks.getLnMock());
-        logFunction.setLog3(LogMocks.getLog2Mock());
+        logFunction.setLog3(LogMocks.getLog3Mock());
         logFunction.setLog5(LogMocks.getLog5Mock());
         logFunction.setLog10(LogMocks.getLog10Mock());
         double actual = logFunction.calculate(x);

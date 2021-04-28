@@ -23,7 +23,7 @@ public class Log10Test {
     @AfterAll
     public void logInCSV() {
         log10 = new Log10(ACCURACY);
-        instruments.CsvLogger csvLogger = new instruments.CsvLogger("csv_output/log10.csv", 1, 5, 0.1);
+        instruments.CsvLogger csvLogger = new instruments.CsvLogger("log10.csv", 1, 5, 0.1);
         csvLogger.log(log10);
     }
 
