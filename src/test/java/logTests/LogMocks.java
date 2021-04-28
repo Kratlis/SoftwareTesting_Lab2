@@ -16,6 +16,7 @@ public class LogMocks {
         Ln ln = mock(Ln.class);
 
         when(ln.calculate(AdditionalMatchers.eq(0.0, 0.1))).thenReturn(NaN);
+        when(ln.calculate(AdditionalMatchers.eq(0.2, 0.1))).thenReturn(-1.609437912);
         when(ln.calculate(AdditionalMatchers.eq(0.5, 0.1))).thenReturn(-0.693147);
         when(ln.calculate(AdditionalMatchers.eq(0.8, 0.1))).thenReturn(-0.223144);
         when(ln.calculate(AdditionalMatchers.eq(1.0, 0.1))).thenReturn(0.0);
@@ -37,15 +38,16 @@ public class LogMocks {
         return ln;
     }
 
-    public static Log3 getLog2Mock() {
+    public static Log3 getLog3Mock() {
         Log3 log3 = mock(Log3.class);
 
         when(log3.calculate(AdditionalMatchers.eq(0.0, 0.1))).thenReturn(NaN);
-        when(log3.calculate(AdditionalMatchers.eq(0.5, 0.1))).thenReturn(-1.0);
-        when(log3.calculate(AdditionalMatchers.eq(0.8, 0.1))).thenReturn(-0.3219281);
+        when(log3.calculate(AdditionalMatchers.eq(0.2, 0.1))).thenReturn(-1.464973521);
+        when(log3.calculate(AdditionalMatchers.eq(0.5, 0.1))).thenReturn(-0.6309297536);
+        when(log3.calculate(AdditionalMatchers.eq(0.8, 0.1))).thenReturn(-0.2031140136);
         when(log3.calculate(AdditionalMatchers.eq(1.0, 0.1))).thenReturn(0.0);
-        when(log3.calculate(AdditionalMatchers.eq(1.2, 0.1))).thenReturn(0.26303444);
-        when(log3.calculate(AdditionalMatchers.eq(1.5, 0.1))).thenReturn(0.58496250);
+        when(log3.calculate(AdditionalMatchers.eq(1.2, 0.1))).thenReturn(0.1659562329);
+        when(log3.calculate(AdditionalMatchers.eq(1.5, 0.1))).thenReturn(0.3690702464);
 
         return log3;
     }
@@ -54,6 +56,7 @@ public class LogMocks {
         Log5 log5 = mock(Log5.class);
 
         when(log5.calculate(AdditionalMatchers.eq(0.0, 0.1))).thenReturn(NaN);
+        when(log5.calculate(AdditionalMatchers.eq(0.2, 0.1))).thenReturn(-1.0);
         when(log5.calculate(AdditionalMatchers.eq(0.5, 0.1))).thenReturn(-0.430677);
         when(log5.calculate(AdditionalMatchers.eq(0.8, 0.1))).thenReturn(-0.138647);
         when(log5.calculate(AdditionalMatchers.eq(1.0, 0.1))).thenReturn(0.0);
@@ -67,6 +70,7 @@ public class LogMocks {
         Log10 log10 = mock(Log10.class);
 
         when(log10.calculate(AdditionalMatchers.eq(0.0, 0.1))).thenReturn(NaN);
+        when(log10.calculate(AdditionalMatchers.eq(0.2, 0.1))).thenReturn(-0.6989700043);
         when(log10.calculate(AdditionalMatchers.eq(0.5, 0.1))).thenReturn(-0.301030);
         when(log10.calculate(AdditionalMatchers.eq(0.8, 0.1))).thenReturn(-0.0969100);
         when(log10.calculate(AdditionalMatchers.eq(1.0, 0.1))).thenReturn(0.0);
